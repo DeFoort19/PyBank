@@ -1,2 +1,2 @@
 # PyBank
-![Money.PNG](Money.PNG)
+![Money.png](Money.png)
