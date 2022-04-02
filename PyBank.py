@@ -5,15 +5,15 @@ from pathlib import Path
 # Declare file location through pathlib
 input_file = Path("python-challenge", "PyBank", "budget_data.csv")
 
-# Create empty lists to iterate through specific rows for the following variables
+# Create empty lists to iterate 
 total_months = []
 total_profit = []
 monthly_profit_change = []
 
-# Open csv in default read mode with context manager
+# Open csv in default read mode 
 with open(input_file,newline="", encoding="utf-8") as budget:
 
-# Store the contents of budget_data.csv in the variable csvreader
+# Store the contents of budget_data.csv in csvreader
     csvreader = csv.reader(budget,delimiter=",") 
 
     # Skip the header labels to iterate with the values
@@ -22,11 +22,11 @@ with open(input_file,newline="", encoding="utf-8") as budget:
     # Iterate through the rows in the stored file contents
     for row in csvreader: 
 
-        # Append the total months and total profit to their corresponding lists
+        # Append the total months and total profit
         total_months.append(row[0])
         total_profit.append(int(row[1]))
 
-    # Iterate through the profits in order to get the monthly change in profits
+    # Iterate through the profits to  get the monthly change in profits
     for i in range(len(total_profit)-1):
         
         # Take the difference between two months and append to monthly profit change
