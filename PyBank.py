@@ -26,7 +26,7 @@ with open(input_file,newline="", encoding="utf-8") as budget:
         total_months.append(row[0])
         total_profit.append(int(row[1]))
 
-    # Iterate through the profits to  get the monthly change in profits
+    # Iterate through the profits to get the monthly change in profits
     for i in range(len(total_profit)-1):
         
         # Take the difference between two months and append to monthly profit change
